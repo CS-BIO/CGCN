@@ -1,23 +1,12 @@
-# CSGNN
+# CGCN
 The code for paper "Curvature-enhanced Graph Convolutional Network for Biomolecular Interaction Prediction"
 
+
+
+## Overview
 ![overview](.//overview.jpg)
 
-## 1. Overview
-
-The repository is organized as follows:
-
-+ `data/` contains the datasets used in the paper;
-+ `parms_setting.py` contains hyperparameters adopted by CSGNN;
-+ `data_preprocess.py` is the preprocess of data before training;
-+ `layer.py` contains mix-hop GNN layers and contrastive GNN layers;
-+ `instantiation.py` instantiates the CSGNN;
-+ `train.py` contains the training and testing code on datasets;
-+ `utils.py` contains preprocessing functions of the data (e.g., normalize...);
-+ `main.py` contains entry to CSGNN (e.g., normalize...);
-
-
-## 2. Dependencies
+## Dependencies
 * numpy == 1.23.3
 * scipy == 1.5.2
 * sklearn == 0.23.2
@@ -27,19 +16,6 @@ The repository is organized as follows:
 * GraphRicciCurvature == 0.5.3.1
 
 
-## 3. Example
-Here we provide several example of using CGCN:
-To run CSGNN with GCN decoder on DTI network using "uniform" as initial features and output the result to test.txt, execute the following command:
-
-```shell
-python main.py --aggregator GCN --feature_type uniform --in_file data/DTI.edgelist --out_file test.txt
-```
-
-
-
-To run CSGNN with GIN decoder on DDI network using "position" as initial features and output the result to test.txt, execute the following command:
-
-```shell
-python main.py --aggregator GIN --feature_type position --in_file data/DDI.edgelist --out_file test.txt
-```
+## 3. Contacts
+If you have any questions or comments, please feel free to email Cong Shen (cshen[at]hnu[dot]edu[dot]cn) and/or Jiawei Luo (luojiawei[at]hnu[dot]edu[dot]cn) and/or Kelin Xia(xiakelin[at]ntu[dot]edu[dot]sg).
 
