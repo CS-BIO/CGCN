@@ -20,8 +20,8 @@ def settings():
     parser.add_argument('--aggregator', choices=['GCN'], default='GCN',
                         help='Message passing framework adopted in CGCN. Default is GCN.')
 
-    parser.add_argument('--in_file', type=str,default='data/DDI.edgelist',
-                        help='Path to data fold. e.g., data/DDI.edgelist')
+    parser.add_argument('--in_file', type=str,default='data/CPI_celegans.edgelist',
+                        help='Path to data fold. e.g., data/ChCh-Miner.edgelist')
 
     parser.add_argument('--out_file', type=str,default='result.txt',
                         help='Path to data result file. e.g., result.txt')

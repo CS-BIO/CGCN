@@ -24,7 +24,7 @@ class Data_class(Dataset):
 def load_data(args, val_ratio=0.1, test_ratio=0.2):
     """Read data from path, convert data into loader, return features and symmetric adjacency"""
     # read data
-    print('Loading {0} seed{1} dataset...'.format(args.in_file[5:8], args.seed))
+    print('Loading {0} seed{1} dataset...'.format(args.in_file, args.seed))
     positive = np.loadtxt(args.in_file, dtype=np.int64)
 
     G = nx.Graph()
