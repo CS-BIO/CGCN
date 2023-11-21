@@ -9,7 +9,7 @@ from torch_geometric.nn import GINConv,GATConv
 
 def reset_parameters(w):
     stdv = 1. / math.sqrt(w.size(0))
-    w.data.uniform_(-stdv, stdv)
+    w.data.uniform_(-stdv, stdv) 
 
 class AvgReadout(nn.Module):
     def __init__(self):
