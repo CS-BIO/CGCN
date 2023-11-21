@@ -17,7 +17,7 @@ def contains_self_loops(edge_index: Tensor) -> bool:
 
     :rtype: bool
     """
-    mask = edge_index[0] == edge_index[1]
+    mask = edge_index[0] == edge_index[1] 
     return mask.sum().item() > 0
 
 
