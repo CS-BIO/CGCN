@@ -8,7 +8,7 @@ from sklearn.metrics import roc_auc_score, average_precision_score, f1_score
 
 
 def train_model(model, optimizer, data_o, train_loader, val_loader, test_loader, args):
-    m = torch.nn.Sigmoid()
+    m = torch.nn.Sigmoid() 
     loss_fct = torch.nn.BCELoss()
     b_xent = nn.BCEWithLogitsLoss()
     loss_history = []
