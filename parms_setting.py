@@ -2,7 +2,7 @@ import argparse
 
 
 def settings():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser() 
 
     # public parameters
     parser.add_argument('--seed', type=int, default=0,
