@@ -7,7 +7,7 @@ from GraphRicciCurvature.OllivierRicci import OllivierRicci
 
 
 class Data_class(Dataset):
-
+ 
     def __init__(self, triple):
         self.entity1 = triple[:, 0]
         self.entity2 = triple[:, 1]
