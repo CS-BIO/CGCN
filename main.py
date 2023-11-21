@@ -7,7 +7,7 @@ from instantiation import Create_model
 from train import train_model
 
 if torch.cuda.is_available():
-    device = torch.device('cuda')
+    device = torch.device('cuda') 
     print('The code uses GPU...')
 else:
     device = torch.device('cpu')
